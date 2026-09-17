@@ -1,14 +1,14 @@
-# ✈️Airline Management System
+# ✈️ Airline Management System
 
 By [Hamza Darwish](https://github.com/hamzawasim835) and [Tuğalp Kumlu](https://github.com/tugalpk).
 
-## 📋About the project
+## 📋 About the project
 
-A partnered semester project for the BLM2012 OOP subject, with Prof. Yunus Emre Selçuk at YTÜ, built as a Java Swing desktop application. Users can browse flights by destination, select seats, make reservations, and run a concurrent, multithreading-based booking simulation. The Admin screen lets users view, add, and update flights.
+A partnered semester project for Prof. Yunus Emre Selçuk's BLM2012 OOP course at YTÜ, built as a Java Swing desktop application. Users can browse flights by destination, select seats, make reservations, and run a concurrent, multithreading-based booking simulation. The Admin screen lets users view, add, and update flights.
 
 The app loads sample planes and flights at startup. Admin flight changes stay in memory. Reservations and tickets are also created in memory; the sample `reservations.txt` and `tickets.txt` are not loaded at startup. Cancelling a reservation rewrites those two files in the current working directory.
 
-## 📁Folder structure
+## 📁 Folder structure
 
 ```text
 AirlineManagementSystem/
@@ -20,20 +20,20 @@ AirlineManagementSystem/
     │   ├── gui/             Swing screens; LoginFrame is the entry point
     │   ├── manager/         Booking logic, reports, simulation, and tests
     │   └── reservation/     Passengers, reservations, tickets, and baggage
-    ├── flights.txt          Sample flights, Change Persistence
-    ├── planes.txt           Sample planes, Change Persistence
-    ├── reservations.txt     Sample reservation records, Change Persistence
-    └── tickets.txt          Sample ticket records, Change Persistence
+    ├── flights.txt          Sample flights loaded at startup
+    ├── planes.txt           Sample planes loaded at startup
+    ├── reservations.txt     Sample records; rewritten on cancellation
+    └── tickets.txt          Sample records; rewritten on cancellation
 ```
 
-## 💻Tools used
+## 💻 Tools used
 
 - Java and the Java standard library for the application logic and file handling.
 - Swing for the desktop interface.
-- JUnit 5 for the three unit tests.
+- JUnit 5 for three test classes containing 12 test methods.
 - Git and GitHub for version control and hosting.
 
-## 🚀Run the application
+## 🚀 Run the application
 
 Install a JDK (Java 8 or newer). The repository includes a runnable JAR, so no build tool is required to try the app. From the project folder, run:
 
@@ -44,7 +44,7 @@ java -jar ../88.jar
 
 The `src` directory must be the working directory: the application looks for `planes.txt` and `flights.txt` there using relative paths. Choose **User** for booking and simulation, or **Admin** to view, add, and update flights. The sample flights are dated January 2026; they are random examples, not current schedules.
 
-## 🏗️Build from source
+## 🏗️ Build from source
 
 The application itself uses only the Java standard library. In PowerShell, from the project folder:
 
@@ -59,4 +59,5 @@ java -cp ../build airline.gui.LoginFrame
 The three `*Test.java` files use JUnit 5 and require JUnit dependencies to compile or run. They are excluded from the command above.
 
 #### Notes
+
 Due to an issue with the previous repo, one of us had to create a new repo from scratch, hence why only one of us appears as a contributor.
