@@ -1,14 +1,14 @@
-# Airline Management System
+# ✈️Airline Management System
 
-By Hamza Darwish and [Tuğalp Kumlu](https://github.com/tugalpk).
+By [Hamza Darwish](https://github.com/hamzawasim835) and [Tuğalp Kumlu](https://github.com/tugalpk).
 
-## About the project
+## 📋About the project
 
-A partnered semester project built as a Java Swing desktop application. Users can browse flights by destination, select seats, make reservations, and run a concurrent booking simulation. The Admin screen lets users view, add, and update flights.
+A partnered semester project for the BLM2012 OOP subject, with Prof. Yunus Emre Selçuk at YTÜ, built as a Java Swing desktop application. Users can browse flights by destination, select seats, make reservations, and run a concurrent, multithreading-based booking simulation. The Admin screen lets users view, add, and update flights.
 
 The app loads sample planes and flights at startup. Admin flight changes stay in memory. Reservations and tickets are also created in memory; the sample `reservations.txt` and `tickets.txt` are not loaded at startup. Cancelling a reservation rewrites those two files in the current working directory.
 
-## Folder structure
+## 📁Folder structure
 
 ```text
 AirlineManagementSystem/
@@ -26,14 +26,14 @@ AirlineManagementSystem/
     └── tickets.txt          Sample ticket records
 ```
 
-## Tools used
+## 💻Tools used
 
 - Java and the Java standard library for the application logic and file handling.
 - Swing for the desktop interface.
-- JUnit 5 for the three source test classes.
+- JUnit 5 for the three unit tests.
 - Git and GitHub for version control and hosting.
 
-## Run the application
+## 🚀Run the application
 
 Install a JDK (Java 8 or newer). The repository includes a runnable JAR, so no build tool is required to try the app. From the project folder, run:
 
@@ -44,7 +44,7 @@ java -jar ../88.jar
 
 The `src` directory must be the working directory: the application looks for `planes.txt` and `flights.txt` there using relative paths. Choose **User** for booking and simulation, or **Admin** to view, add, and update flights. The sample flights are dated January 2026; they are historical examples, not current schedules.
 
-## Build from source
+## 🏗️Build from source
 
 The application itself uses only the Java standard library. In PowerShell, from the project folder:
 
