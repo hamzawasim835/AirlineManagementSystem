@@ -20,10 +20,10 @@ AirlineManagementSystem/
     │   ├── gui/             Swing screens; LoginFrame is the entry point
     │   ├── manager/         Booking logic, reports, simulation, and tests
     │   └── reservation/     Passengers, reservations, tickets, and baggage
-    ├── flights.txt          Sample flights
-    ├── planes.txt           Sample planes
-    ├── reservations.txt     Sample reservation records
-    └── tickets.txt          Sample ticket records
+    ├── flights.txt          Sample flights, Change Persistence
+    ├── planes.txt           Sample planes, Change Persistence
+    ├── reservations.txt     Sample reservation records, Change Persistence
+    └── tickets.txt          Sample ticket records, Change Persistence
 ```
 
 ## 💻Tools used
@@ -57,3 +57,6 @@ java -cp ../build airline.gui.LoginFrame
 ```
 
 The three `*Test.java` files use JUnit 5 and require JUnit dependencies to compile or run. They are excluded from the command above.
+
+#### Notes
+Due to an issue with the previous repo, one of us had to create a new repo from scratch, hence why only one of us appears as a contributor.
