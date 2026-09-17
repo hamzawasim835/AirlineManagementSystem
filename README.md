@@ -58,6 +58,8 @@ java -cp ../build airline.gui.LoginFrame
 
 The three `*Test.java` files use JUnit 5 and require JUnit dependencies to compile or run. They are excluded from the command above.
 
+---
+
 #### Notes
 
 Due to an issue with the previous repo, one of us had to create a new repo from scratch, hence why only one of us appears as a contributor.
