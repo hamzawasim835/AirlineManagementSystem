@@ -2,7 +2,36 @@
 
 By Hamza Darwish and [Tuğalp Kumlu](https://github.com/tugalpk).
 
-A partnered semester project: a Java Swing application for browsing flights, reserving seats, managing flights, and simulating concurrent bookings.
+## About the project
+
+A partnered semester project built as a Java Swing desktop application. Users can browse flights by destination, select seats, make reservations, and run a concurrent booking simulation. The Admin screen lets users view, add, and update flights.
+
+The app loads sample planes and flights at startup. Admin flight changes stay in memory. Reservations and tickets are also created in memory; the sample `reservations.txt` and `tickets.txt` are not loaded at startup. Cancelling a reservation rewrites those two files in the current working directory.
+
+## Folder structure
+
+```text
+AirlineManagementSystem/
+├── 88.jar                   Runnable application
+├── README.md
+└── src/
+    ├── airline/
+    │   ├── flight/          Flights, routes, planes, and seats
+    │   ├── gui/             Swing screens; LoginFrame is the entry point
+    │   ├── manager/         Booking logic, reports, simulation, and tests
+    │   └── reservation/     Passengers, reservations, tickets, and baggage
+    ├── flights.txt          Sample flights
+    ├── planes.txt           Sample planes
+    ├── reservations.txt     Sample reservation records
+    └── tickets.txt          Sample ticket records
+```
+
+## Tools used
+
+- Java and the Java standard library for the application logic and file handling.
+- Swing for the desktop interface.
+- JUnit 5 for the three source test classes.
+- Git and GitHub for version control and hosting.
 
 ## Run the application
 
@@ -28,14 +57,3 @@ java -cp ../build airline.gui.LoginFrame
 ```
 
 The three `*Test.java` files use JUnit 5 and require JUnit dependencies to compile or run. They are excluded from the command above.
-
-## Project files
-
-- `src/airline/flight`: flights, routes, planes, and seats.
-- `src/airline/reservation`: passengers, reservations, tickets, and baggage.
-- `src/airline/manager`: flight and reservation logic, reports, simulation, and tests.
-- `src/airline/gui`: Swing screens; `LoginFrame` is the entry point.
-- `src/*.txt`: sample planes, flights, reservations, and tickets.
-- `88.jar`: packaged application.
-
-The app loads the sample plane and flight files at startup. Flight changes in the Admin screen are held in memory. Reservation and ticket records are generated in memory during a session; the sample `reservations.txt` and `tickets.txt` are not loaded at startup. Cancelling a reservation rewrites those two files in the current working directory.
