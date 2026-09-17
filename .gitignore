@@ -1,0 +1,8 @@
+/build/
+/META-INF/
+*.class
+.project
+.classpath
+.settings/
+.idea/
+*.iml

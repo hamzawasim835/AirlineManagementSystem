@@ -1,0 +1,2 @@
+R-1A2B3C4D,Ali,Yilmaz,ali@mail.com,FL001,12A
+R-9F8E7D6C,Ayse,Demir,ayse@mail.com,FL002,5C
