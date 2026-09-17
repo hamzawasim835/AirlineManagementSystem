@@ -42,7 +42,7 @@ cd src
 java -jar ../88.jar
 ```
 
-The `src` directory must be the working directory: the application looks for `planes.txt` and `flights.txt` there using relative paths. Choose **User** for booking and simulation, or **Admin** to view, add, and update flights. The sample flights are dated January 2026; they are historical examples, not current schedules.
+The `src` directory must be the working directory: the application looks for `planes.txt` and `flights.txt` there using relative paths. Choose **User** for booking and simulation, or **Admin** to view, add, and update flights. The sample flights are dated January 2026; they are random examples, not current schedules.
 
 ## 🏗️Build from source
 
